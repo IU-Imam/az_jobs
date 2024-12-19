@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Hero = () => {
+const Hero = ({title = 'Become a Pro', subtitle = 'Find the job that fits your skills and needs'}) => {
   return (
     
     <section className="bg-zinc-500
@@ -12,10 +12,10 @@ const Hero = () => {
           <h1
             className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl"
           >
-            Become a Pro 
+            {title}
           </h1>
           <p className="my-4 text-xl text-white">
-            Find the job that fits your skills and needs
+            {subtitle}
           </p>
         </div>
       </div>
