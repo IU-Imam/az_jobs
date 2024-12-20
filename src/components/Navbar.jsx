@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, Links } from 'react-router-dom'
 import logo from '../assets/images/logo.png'
 const Navbar = () => {
   return (
@@ -9,7 +10,7 @@ const Navbar = () => {
             className="flex flex-1 items-center justify-center md:items-stretch md:justify-start"
           >
             {/* <!-- Logo --> */}
-            <a className="flex flex-shrink-0 items-center mr-4" href="/index.html">
+            <a className="flex flex-shrink-0 items-center mr-4" href="/">
               <img
                 className="h-10 w-auto"
                 src={logo}
@@ -20,18 +21,18 @@ const Navbar = () => {
             </a>
             <div className="md:ml-auto">
               <div className="flex space-x-2">
-                <a
-                  href="/index.html"
+                <Link
+                  to="/"
                   className="text-white bg-black hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                  >Home</a>
-                <a
-                  href="/jobs.html"
+                  >Home</Link>
+                <Link
+                  to="/jobs"
                   className="text-black hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                  >Jobs</a>
-                <a
-                  href="/add-job.html"
+                  >Jobs</Link>
+                <Link
+                  href="/add-job"
                   className="text-black hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                  >Add Job</a>
+                  >Add Job</Link>
               </div>
             </div>
           </div>
