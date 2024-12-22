@@ -97,9 +97,9 @@ const JobPage = () => {
         </>
     )
 }
-
+ 
 const jobLoader = async ({ params}) => {
-    const res = await fetch(`/api/jobs/${params.id}`)
+    const res = await fetch(`https://676874d5cbf3d7cefd37fc13.mockapi.io/api/jobs/${params.id}`)
     const data = await res.json()
     return data
 }
